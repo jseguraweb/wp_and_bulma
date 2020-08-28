@@ -1,0 +1,41 @@
+/*
+Theme Name: Learning WP
+Author: Jaime Segura
+Author URI: https://jaimeseguraweb.com_create_guid
+Description: Responsive theme styled with Bulma
+Version: 1.0
+Tags: two-columns, left-sidebar, custom-header, custom-menu, blog
+*/
+
+.menu-main-menu-container,
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-menu ul li {
+    display: inline;
+    padding: 0 2rem;
+}
+
+.frontpage-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/img/forest.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.frontpage-wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-main-menu-container,
+    .menu {
+        flex-direction: row;
+        align-items: center;
+    }
+}

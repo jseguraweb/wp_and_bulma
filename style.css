@@ -7,6 +7,18 @@ Version: 1.0
 Tags: two-columns, left-sidebar, custom-header, custom-menu, blog
 */
 
+/* NAVBAR */
+
+.navbar-brand,
+.navbar-menu,
+.navbar-end {
+    background-color: rgba(22, 67, 88);
+}
+
+#navbarBasicExample {
+    padding: 0;
+}
+
 .menu-main-menu-container,
 .menu {
     display: flex;
@@ -14,28 +26,63 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, blog
 }
 
 .navbar-menu ul li {
-    display: inline;
-    padding: 0 2rem;
+    padding: 1rem;
 }
 
+.navbar-menu ul li a {
+    color: #fff;
+}
+
+.burger-line {
+    color: #fff;
+    width: 2rem;
+    height: 3px;
+}
+
+/* HOME */
+
 .frontpage-wrapper {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./assets/img/forest.jpg");
+    background-image: url("./assets/img/company.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.frontpage-wrapper .container {
+.company-title {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    align-self: flex-end;
 }
 
+/* ARCHIVE AND SINGLE */
+
+.archive-container, .notification {
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+
 @media screen and (min-width: 1024px) {
+    /* NAVBAR */
     .menu-main-menu-container,
     .menu {
         flex-direction: row;
         align-items: center;
+    }
+    .navbar-menu ul li {
+        padding: 0 1rem;
+    }
+    /* HOME */
+    .company-title {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        align-self: center;
+        background-color: rgba(22, 67, 88, 0.4);
+        padding: 0.5rem 2rem 1rem;
+    }
+    .title.is-3 {
+        font-size: 5rem !important;
     }
 }

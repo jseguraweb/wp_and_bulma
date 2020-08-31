@@ -1,9 +1,7 @@
-<?php 
+<?php get_header(); ?>
 
-get_header();
+<?php get_template_part('includes/landing', 'content'); ?>
 
-get_template_part('includes/section', 'content');
+<?php get_template_part('includes/description', 'content'); ?>
 
-get_footer(); 
-
-?>
+<?php get_footer(); ?>
